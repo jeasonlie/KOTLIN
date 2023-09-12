@@ -11,4 +11,6 @@ fun main(){
     println("%.3f".format(6.0/7.0))
     println("%.4f".format(6.0/7.0))
     println(14 shl 2)
+    println((1200/(2*50)-5) shr (15 % 2))
+    println("Batu 🪨")
 }
