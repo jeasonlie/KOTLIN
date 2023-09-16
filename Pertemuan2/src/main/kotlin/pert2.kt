@@ -24,4 +24,9 @@ fun main(){
     var usiaSaatIni = 22
     println("Tahun ini, saya $nama berusia $usiaSaatIni tahun")
     println("Tahun depan, saya $nama berusia ${usiaSaatIni++} tahun")
+    println("Tahun depan, saya $nama berusia ${usiaSaatIni++} tahun")
+    println("Tahun depan, saya $nama berusia ${usiaSaatIni++} tahun")
+    println("Tahun depan, saya $nama berusia ${usiaSaatIni++} tahun")
+
+
 }
