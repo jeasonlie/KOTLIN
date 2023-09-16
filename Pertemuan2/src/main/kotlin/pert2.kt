@@ -28,5 +28,27 @@ fun main(){
     println("Tahun depan, saya $nama berusia ${usiaSaatIni++} tahun")
     println("Tahun depan, saya $nama berusia ${usiaSaatIni++} tahun")
 
+    val angka1: Int = 10
+    val angka2 = 20
+    println("$angka1 + $angka2 = ${angka1+angka2}")
 
+    val firstName = "Kujoh"
+    val lastName = "Jotaro"
+    println("Nama Lengkap = $firstName $lastName")
+    println("Inisial = " + firstName[0] + lastName[0])
+    println("Inisial = ${firstName[0]}${lastName[0]}")
+
+    //Tipe data Char
+    var huruf = 'a'
+    println("Huruf ${huruf++}")
+    println("Huruf ${huruf++}")
+    println("Huruf ${huruf++}")
+    println("Huruf ${huruf++}")
+    println("Huruf ${huruf++}")
+    println("Huruf ${huruf++}")
+    println("Huruf ${huruf++}")
+
+    //Escaped String (\n, \t, \", \', \\)
+    val kalimat = "Kotlin itu \"Mudah\"!"
+    println(kalimat)
 }
