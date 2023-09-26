@@ -74,11 +74,18 @@ fun main(){
     //Contoh lanjutan When
     val hourOfDay = 12
     val timeOfDay = when(hourOfDay){
-        0,1,2,3,4,5 -> "Early Morning"
-        6,7,8,9,10,11 -> "Morning"
-        12,13,14,15,16 -> "Afternoon"
-        17,18,19 -> "Evening"
-        20,21,22,23 -> "Late evening"
+//        0,1,2,3,4,5 -> "Early Morning"
+//        6,7,8,9,10,11 -> "Morning"
+//        12,13,14,15,16 -> "Afternoon"
+//        17,18,19 -> "Evening"
+//        20,21,22,23 -> "Late evening"
+//        else -> "INVALID HOUR"
+        
+        in 0..5 -> "Early Morning"
+        in 6..11-> "Morning"
+        in 12..16-> "Afternoon"
+        in 17..19-> "Evening"
+        in 20..23-> "Late evening"
         else -> "INVALID HOUR"
     }
     println(timeOfDay)
