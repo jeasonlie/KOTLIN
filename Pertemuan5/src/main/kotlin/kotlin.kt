@@ -16,4 +16,16 @@ fun main(){
         }
     }
     println(sum)
+
+    sum = 0
+    rowLoop@ for (row in 0 until 8){
+        columLoop@ for (column in 0 until 8){
+            if(row == column){
+                continue@rowLoop
+            }
+            sum += row * column
+        }
+    }
+    println(sum)
+
 }
