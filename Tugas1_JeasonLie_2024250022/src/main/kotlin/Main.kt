@@ -51,7 +51,7 @@ fun main(){
     //Jawaban soal nomor 5
     fun fibonacci(n: Int): Int {
         if (n <= 0) {
-            throw IllegalArgumentException()
+            throw IllegalArgumentException("Input harus lebih besar dari 0.")
         } else if (n == 1 || n == 2) {
             return 1
         } else {
