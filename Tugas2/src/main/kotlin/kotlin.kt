@@ -12,6 +12,14 @@ fun printStatesWithLongNames(stateMap: Map<String, String>) {
         }
     }
 }
+val factorial: (Int) -> Long = { n ->
+    var result: Long = 1
+    for (i in 2..n) {
+        result *= i
+    }
+    result
+}
+
 fun main() {
     val value = 10
     val divisor = 2
@@ -22,6 +30,10 @@ fun main() {
 
     val stateMap = mapOf("NY" to "New York", "CA" to "California", "TX" to "Texas", "FL" to "Florida")
     printStatesWithLongNames(stateMap)
+
+    val n = 5
+    val hasilFaktorial = factorial(n)
+    println("Faktorial dari $n adalah $hasilFaktorial")
 }
 
 
