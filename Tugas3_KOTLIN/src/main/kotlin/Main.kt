@@ -1,7 +1,19 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val perusahaan = Perusahaan()
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val karyawan1 = Karyawan("John Doe", "Manager", 5000.0)
+    val karyawan2 = Karyawan("Jane Doe", "Programmer", 4000.0)
+    val karyawan3 = Karyawan("Bob Smith", "Designer", 4500.0)
+
+    perusahaan.tambahKaryawan(karyawan1)
+    perusahaan.tambahKaryawan(karyawan2)
+    perusahaan.tambahKaryawan(karyawan3)
+
+    println("Informasi Karyawan Sebelum Naik Gaji:")
+    perusahaan.tampilkanInformasiKaryawan()
+
+    karyawan1.naikGaji(10.0)
+
+    println("Informasi Karyawan Setelah Naik Gaji:")
+    perusahaan.tampilkanInformasiKaryawan()
 }
